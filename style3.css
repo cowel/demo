@@ -1,0 +1,36 @@
+
+header{ display: flex; height:60px ;}
+.logo{flex: 2;    margin-left: 195px;  margin-top: 11px;   width: 140px;}
+.logo a{display: inline-block;}
+.container{flex: 5;   margin-top: -21px;    padding-left: 40px;}
+.menu li{display: inline;       padding-left: 20px;}
+.menu li a{color: black; font-size: 16px }
+.menu li a:hover{color: orange}
+.icon{flex: 1;   margin-top: 14px;    margin-left: 17px;    padding-left: 245px;}
+a{text-decoration: none}
+.block {position: relative;color:white; width: 100%;height: auto;}
+.img{    z-index: -999;width: 100%;height: 675px;}
+.abc{position: absolute;            top: 268px;   left: 590px; text-align: center}
+.slide{position: absolute;bottom: -231px;   left: 368px;}
+.slide div{background-color: steelblue;display: inline-block;width: 370px; margin-left: -6px; }
+.all{position: relative;}
+.screen{position: absolute}
+.hidden{position: fixed;; background-color: lightskyblue; color: white; top:0;right:0;z-index: 999; width: 500px; height: 800px;display: none;}
+.menu2{direction: initial}
+.close{ padding-right: 5px; right: 50px;    margin-left: 467px;}
+nav ul {list-style-type: none;}
+body{margin: 0px}
+.contact a{display: inline;}
+.mid {    height: 280px;
+    position: absolute;
+    top: -312px;
+    right: -697px; background-color: orange !important;}
+.right{position: absolute;
+    right: -1067px;
+    top: -277px;}
+.left{    position: absolute;
+    top: -278px;
+    left: -37px;}
+.slide div h4 {text-align: center}    
+button{background-color: white; }
+
