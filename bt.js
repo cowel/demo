@@ -62,11 +62,20 @@ BookShelve.prototype.updateprice= function(array){
       var Updatepricedays= Math.floor((new Date().getTime() - element.Dateupdateprice)/milliSecondDate1)    
       for(var d =0; d<Updatepricedays;d++)  element.price -= element.price*0.05
     }
-  if (element.price < 5000)  array.splice(index,1)
+    if (element.price < 5000)  array.splice(index,1)
     element.Dateupdateprice=new Date().valueOf()
   });
 }(bookShelve.books)
-
+BookShelve.prototype.findCheapestBook= function(array){
+  var CheapestBook=array[0].price;
+  var index =0
+  for( var i=0;i<array.length;i++) 
+    if(CheapestBook>array[i].price){
+      CheapestBook =array[i].price
+      index=i
+    }
+  console.log('CheapestBook',array[index])  
+}(bookShelve.books)
 console.log('book shelve ', bookShelve.books)
 console.log('Books of Duong Thuy ', bookShelve.searchBooksByAuthorName('Duong Thuy'))
 console.log('Update book Se co cach ma', bookShelve.books)
