@@ -1,0 +1,7 @@
+.list{  list-style-type:none}
+input{width: 700px;
+      height: 30px;  }  
+header{position: relative;
+    text-align: center}  
+ul{position: absolute;} 
+li{display: block;}
